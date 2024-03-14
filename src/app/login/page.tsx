@@ -36,7 +36,7 @@ export default function LoginPage({ searchParams }: PageProps) {
     });
   };
   return (
-    <form className="space-y-6" onSubmit={handleSubmit}>
+    <form className="container space-y-6 p-12" onSubmit={handleSubmit}>
       <FormContainer>
         <Label htmlFor="username">Username</Label>
         <Input

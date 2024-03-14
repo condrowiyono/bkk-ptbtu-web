@@ -1,8 +1,21 @@
-import { LucideProps, LucideIcon, MenuIcon } from "lucide-react";
+import {
+  LucideProps,
+  LucideIcon,
+  MenuIcon,
+  InstagramIcon,
+  TwitterIcon,
+  FacebookIcon,
+  ExternalLink,
+  SquareArrowOutUpRight,
+} from "lucide-react";
 
 export type Icon = LucideIcon;
 
 export const Icons = {
+  externalLink: (props: LucideProps) => <SquareArrowOutUpRight {...props} />,
+  facebook: (props: LucideProps) => <FacebookIcon {...props} />,
+  twitter: (props: LucideProps) => <TwitterIcon {...props} />,
+  instagram: (props: LucideProps) => <InstagramIcon {...props} />,
   menu: (props: LucideProps) => <MenuIcon {...props} />,
   logo: (props: LucideProps) => (
     <svg

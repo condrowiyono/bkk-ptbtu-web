@@ -20,8 +20,9 @@ const config = {
     extend: {
       backgroundImage: {
         "hero-ornament": "url('/ornament/square.svg')",
+        "dot-ornament": "url('/ornament/dot.webp')",
         "card-linear":
-          "linear-gradient(146.63deg, rgba(2, 132, 199, .1) 1.32%, rgba(236, 254, 255, 0) 66%), linear-gradient(325.76deg, rgba(2, 132, 199, .2) 3.68%, rgba(236, 254, 255, 0) 66.89%), #ffffff",
+          "linear-gradient(146.63deg, rgba(2, 132, 199, .1) 1.32%, rgba(236, 254, 255, 0) 66%), linear-gradient(325.76deg, rgba(2, 132, 199, .2) 3.68%, rgba(236, 254, 255, 0) 66.89%)",
       },
       colors: {
         border: "hsl(var(--border))",

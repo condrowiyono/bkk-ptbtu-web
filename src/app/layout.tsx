@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 import { Heeader } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -49,13 +50,6 @@ export const metadata: Metadata = {
     "btu",
   ],
   referrer: "origin",
-  viewport: {
-    width: "device-width",
-    height: "device-height",
-    initialScale: 1,
-    minimumScale: 1,
-    maximumScale: 5,
-  },
   creator: "Condro Wiyono",
   publisher: "PT Baja Titian Utama",
   // TODO: Add more metadata
@@ -74,10 +68,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="id" className="scroll-smooth">
       <body className={cn(font.className)}>
         <Heeader />
         {children}
+        <Footer />
       </body>
     </html>
   );
