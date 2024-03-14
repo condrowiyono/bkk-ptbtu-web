@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import { Heeader } from "@/components/header";
 
 const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -65,14 +66,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={cn(font.className)}>
-        <header className="sticky top-0 z-40 w-full border-b bg-background">
-          <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-            header
-          </div>
-        </header>
-        <main className="container mx-auto p-4">{children}</main>
+        <Heeader />
+        <main className="container mx-auto">{children}</main>
       </body>
     </html>
   );
