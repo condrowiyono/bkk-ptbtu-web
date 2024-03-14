@@ -45,9 +45,17 @@ export const metadata: Metadata = {
     "kementrian pekerjaan umum",
     "pupr",
     "jembatan di pulau jawa",
+    "pt btu",
+    "btu",
   ],
   referrer: "origin",
-  viewport: "width=device-width, initial-scale=1.0",
+  viewport: {
+    width: "device-width",
+    height: "device-height",
+    initialScale: 1,
+    minimumScale: 1,
+    maximumScale: 5,
+  },
   creator: "Condro Wiyono",
   publisher: "PT Baja Titian Utama",
   // TODO: Add more metadata
@@ -69,7 +77,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={cn(font.className)}>
         <Heeader />
-        <main className="container mx-auto">{children}</main>
+        {children}
       </body>
     </html>
   );

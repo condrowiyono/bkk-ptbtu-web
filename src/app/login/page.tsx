@@ -67,7 +67,7 @@ export default function LoginPage({ searchParams }: PageProps) {
         <Button type="submit">Sign in</Button>
       </div>
       {searchParams.error && (
-        <p className="text-red-600 text-center capitalize">Login failed.</p>
+        <p className="text-center capitalize text-red-600">Login failed.</p>
       )}
     </form>
   );

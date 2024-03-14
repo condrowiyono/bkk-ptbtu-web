@@ -5,7 +5,6 @@ import * as React from "react";
 import { siteConfig } from "@/configs/site";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Icons } from "@/components/icons";
-import { cn } from "@/lib/utils";
 
 const Heeader = React.forwardRef<
   React.ElementRef<"header">,
@@ -14,8 +13,12 @@ const Heeader = React.forwardRef<
   const [sheetOpen, setSheetOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b" ref={ref} {...props}>
-      <div className="container flex h-16 items-center space-x-4 justify-between sm:space-x-0 backdrop-blur bg-background/60">
+    <header
+      className="sticky top-0 z-40 w-full border-b bg-background/60 backdrop-blur"
+      ref={ref}
+      {...props}
+    >
+      <div className="container flex h-16 items-center justify-between space-x-4 sm:space-x-0">
         <Link href="/">
           <Icons.logo className="h-12" />
         </Link>
