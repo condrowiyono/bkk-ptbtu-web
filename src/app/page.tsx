@@ -30,6 +30,7 @@ export default async function HomePage() {
               className="text-lg font-bold"
               href="https://www.instagram.com/bajatitianutama.official"
               target="_blank"
+              rel="noreferrer"
             >
               IG: bajatitianutama.official
             </a>

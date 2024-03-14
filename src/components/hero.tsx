@@ -26,36 +26,32 @@ export const Hero = (props: Partial<HeroProps>) => {
       <div className="container mx-auto flex flex-col-reverse  items-center justify-between gap-4 px-12 md:flex-row">
         <div className="basis-3/5 space-y-4 text-center md:text-left">
           <h1 className="text-3xl font-bold md:text-7xl ">{heading}</h1>
-          <p className="text-xl md:text-2xl">{subHeading}</p>
-          <p className="text-gray-600">oleh PT Baja Titian Utama</p>
+          <h2 className="text-xl md:text-2xl">{subHeading}</h2>
         </div>
         <div className="my-12 grid w-full basis-2/5 grid-cols-2 gap-2 md:my-32">
           <div className="relative col-span-2 h-64 w-full">
             <Image
-              className="rounded-lg"
+              className="rounded-lg object-cover"
               src={image1}
               alt="Jembatan Callender Hamilton"
               fill
-              style={{ objectFit: "cover" }}
             />
           </div>
 
           <div className="relative hidden h-56 w-full sm:block">
             <Image
-              className="rounded-lg shadow-sm"
+              className="rounded-lg object-cover shadow-sm"
               src={image2}
               alt="Jembatan Callender Hamilton"
               fill
-              style={{ objectFit: "cover" }}
             />
           </div>
           <div className="relative hidden h-56 w-full sm:block">
             <Image
-              className="rounded-lg"
+              className="rounded-lg object-cover"
               src={image3}
               alt="Jembatan Callender Hamilton"
               fill
-              style={{ objectFit: "cover" }}
             />
           </div>
         </div>

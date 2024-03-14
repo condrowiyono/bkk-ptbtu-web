@@ -5,11 +5,10 @@ export const Profile = () => {
     <div className="container relative mx-auto h-full py-8">
       <div className="relative hidden md:block md:h-[720px] md:w-[720px]">
         <Image
-          className="rounded-xl"
+          className="rounded-xl object-cover"
           src="/hero/about.webp"
           alt="Tentang PT Baja Titian Utama"
           fill
-          style={{ objectFit: "cover" }}
         />
       </div>
       <div className="right-32 w-full space-y-4 rounded-xl bg-white bg-white bg-card-linear p-8 shadow-sm md:absolute md:top-1/2 md:w-[600px] md:-translate-y-1/2 md:transform">

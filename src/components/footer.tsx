@@ -10,13 +10,18 @@ export const Footer = () => {
             <a
               href="https://www.instagram.com/bajatitianutama.official"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="flex items-center gap-2">
                 <Icons.instagram />
                 bajatitianutama.official
               </div>
             </a>
-            <a href="https://twitter.com/BajaTitianUtama" target="_blank">
+            <a
+              href="https://twitter.com/BajaTitianUtama"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="flex items-center gap-2">
                 <Icons.twitter />
                 BajaTitianUtama
@@ -25,6 +30,7 @@ export const Footer = () => {
             <a
               href="https://www.facebook.com/profile.php?id=100089226504104"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="flex items-center gap-2">
                 <Icons.facebook />

@@ -36,9 +36,9 @@ export const Activity = (props: Partial<ActivityProps>) => {
               },
             )}
           >
-            <h1 className="break-words text-5xl font-bold text-primary md:text-left md:text-7xl">
+            <span className="break-words text-5xl font-bold text-primary md:text-left md:text-7xl">
               {item.title}
-            </h1>
+            </span>
             <div className="border-l-4 border-primary pl-2">
               {item.description}
             </div>
@@ -47,12 +47,12 @@ export const Activity = (props: Partial<ActivityProps>) => {
       </div>
       <div className="basis-1/2">
         <div>
-          <h1 className="text-center text-5xl font-bold text-primary md:text-left md:text-7xl">
+          <div className="text-center text-5xl font-bold text-primary md:text-left md:text-7xl">
             {title}
-          </h1>
-          <h2 className="text-center  text-xl text-gray-600 md:text-left md:text-3xl">
+          </div>
+          <div className="text-center  text-xl text-gray-600 md:text-left md:text-3xl">
             {subtitle}
-          </h2>
+          </div>
         </div>
       </div>
     </div>

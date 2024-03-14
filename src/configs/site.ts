@@ -4,7 +4,7 @@ export const siteConfig = {
   hero: {
     heading: "Callender Hamilton (CH)",
     subHeading:
-      "Proyek KPBU Penggantian atau Duplikasi jembatan Callender Hamilton (CH) di Pulau Jawa",
+      "Proyek KPBU Penggantian atau Duplikasi jembatan Callender Hamilton (CH) di Pulau Jawa oleh PT Baja Titian Utama",
     image1: "/hero/about.webp",
     image2: "/hero/about.webp",
     image3: "/hero/about.webp",
